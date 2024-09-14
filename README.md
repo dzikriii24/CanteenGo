@@ -10,8 +10,12 @@ CanteenGO adalah sebuah aplikasi atau website kantin online yang dirancang untuk
 Menjadi platform untuk berjualan dengan konsep online agar menjangkau lebih banyak konsumen. dengan tujuan menghubungkan antara penjual dan pembeli melalui aplikasi atau website yang mudah digunakan.
 ## Misi
 -Memberikan platform berjualan dengan mudah untuk para penjual.
+
 -Memberikan akses mudah kepada para konsumen untuk mencari makanan den minuman dari para penjual melalui aplikasi tersebut.
+
 -Menghubungkan antara penjual dan pembeli dengan mudah.
+
 -Sebagai konsumen dapat meminimalisir pengeluaran tenaga ekstra untuk mencari makanan.
+
 -Sebagai Penjual dapat menjual suatu produk dengan mudah dan efisien.
 
