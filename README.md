@@ -19,3 +19,13 @@ Menjadi platform untuk berjualan dengan konsep online agar menjangkau lebih bany
 
 -Sebagai Penjual dapat menjual suatu produk dengan mudah dan efisien.
 
+#Branding
+
+#User Story
+
+#Struktur Data
+
+#Arsitektur Sistem
+
+#UI (Product Design)
+
