@@ -20,10 +20,21 @@ Menjadi platform untuk berjualan dengan konsep online agar menjangkau lebih bany
 -Sebagai Penjual dapat menjual suatu produk dengan mudah dan efisien.
 
 # Branding
+Berikut ini adalah branding dari CanteenGo :
+## Nama Produk : CanteenGo
+CanteenGo diambil dari kata Canteen (Tempat Jual Beli) dan Go (Pergi). Filosfi dari kedua kata ini mencerminkan kemudahan untuk kegiatan jual beli.
 
-# User Story
+## Tagline : sell it and buy it
+
+## Campaign
+Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara mudah tanpa harus menggunakan banyak energi.
+
+## Target User
+- Penjual
+- Pembeli
 
 # Struktur Data
+
 
 # Arsitektur Sistem
 
