@@ -39,7 +39,7 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
 
 Sebagai | Saya ingin bisa | Sehingga | Prioritas
 ---|---|---|---
-Admin | Mengakses fitur admin | Dapat mengelola penuh website
+Admin | Mengakses fitur admin | Dapat mengelola penuh website | ⭐⭐⭐⭐⭐
 Pengguna | mengakses fitur atau menu dalam website | bisa menjalankan dam mengakses apa saja yang ada didalam beberapa fitur/menu tersebut | ⭐⭐⭐⭐⭐
 Pengguna | Register | Bisa mendaftarkan akun dan biodata diri, agar dapat memasukan akun kedalam menu login | ⭐⭐⭐⭐⭐
 Pengguna | Login | Bisa mengakses semua fitur yang tersedia pada website | ⭐⭐⭐⭐
