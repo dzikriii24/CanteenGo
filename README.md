@@ -184,6 +184,7 @@ flowchart LR
         Harga_Produk
         Deskripsi_Produk
         Nomer_HP
+        Jenis_Produk
     ]
 
 
@@ -263,6 +264,7 @@ flowchart TD
         Nomer HP
         Harga Produk
         Deskripsi Produk
+        Jenis-Produk
     ]
     LogAdm[
         Username : Admin
@@ -282,7 +284,143 @@ flowchart TD
 
 
 ```
+## Class Diagram
+```mermaid
 
+erDiagram
+    User ||--o{ Login : jikaPunyaAkun
+    Login {
+        string username
+        string password
+    }
+
+    User ||--o{ Register : register
+    Register {
+        string username
+        string password
+        string nomerHP
+        string alamat
+        string email
+        string instagram
+    }
+    Login ||--|| ForgotPassword : userLupaPassword
+    ForgotPassword{
+        string email
+        string newPassword
+    }
+    ForgotPassword ||--|| Login: login_setelah_gantiPW
+    Register ||--|| Login : login_setelah_register
+
+    Login ||--|| Homepage : user-dapat-akses-homepage-setelah-login
+    Homepage{
+        img promosi
+        string search
+        string filter
+        img produk
+    }
+    Homepage ||--o{ Setting : dihomePage-terdapat-menu-setting
+    Setting{
+        string ubahUsername
+        string ubahNomerHP
+        string ubahAlamat
+        string ubahEmail
+        string ubahPassword
+        string ubahInstagram
+    }
+
+    Setting ||--|| LogOut : userLogOut
+    Setting ||--|| PromosiProduk : mempromosikan-produk
+    PromosiProduk{
+        img fotoProduk
+        string jenisProduk
+        string namaProduk
+        int harga
+        string deskripsi
+        string nomerHP
+    }
+    Homepage ||--o{ ProdukPage : detailProduk
+    ProdukPage {
+        string profilePenjual
+        img fotoProduk
+        string jenisProduk
+        string namaProduk
+        int harga
+        string deskripsi
+        string nomerHP
+        function pesanProduk
+    }
+    Homepage ||--o{ SellerPage : menjualProduk
+    SellerPage {
+        string namaProduk
+        int hargaProduk
+        string deskripsi
+        string nomerHP
+        img fotoProduk
+    }
+    Homepage ||--o{ ProfilePage : detailPenjual
+    ProfilePage {
+        string namaPenjual
+        string instagram
+        product ProdukYangDijual
+    }
+
+    ProdukPage o{--|| User : user-mendapatkan-produk
+
+    Register ||--|| ProfilePage : dataRegister
+    Setting ||--|| ProfilePage : SalingTerikat
+    ProdukPage ||--|| ProfilePage : profil-penjual-dapat-dicek
+
+    Admin ||--o{ Approved : admin-menyetujui
+    Approved {
+        string profilePenjual
+        img fotoProduk
+        string jenisProduk
+        string namaProduk
+        int harga
+        string deskripsi
+        string nomerHP
+    }
+
+    Admin ||--o{ notApproved : admin-tidak-menyetujui
+    notApproved {
+        string profilePenjual
+        img fotoProduk
+        string jenisProduk
+        string namaProduk
+        int harga
+        string deskripsi
+        string nomerHP
+    }
+    Admin ||--o{ Promosi : mengelola-promosi-penjual
+    Promosi{
+        img fotoProduk
+        string jenisProduk
+        string namaProduk
+        int harga
+        string deskripsi
+        string nomerHP
+    }
+
+    Admin ||--o{ ListUser : user-yang-terdaftar
+    ListUser {
+        string username
+        string password
+        string nomerHP
+        string alamat
+        string email
+        string instagram
+    }
+
+    Login ||--|| Admin : Jika-user-dan-pw-sinkron
+
+    SellerPage ||--|| Admin : Menunggu-Persetujuan
+
+    Approved ||--|| Homepage : produk-ditambahkan-ke-homepage
+
+    PromosiProduk ||--o{ Admin : promosiDiprosesAdmin
+
+    Promosi ||--|| Homepage : PromosiDiterbitkan
+```
 
 
 # User Story
