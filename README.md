@@ -222,7 +222,7 @@ flowchart TD
     Search --> Produk
     Filter --> Produk
     Produk --> ProdukS
-    produks --> produk
+    produkS --> produk
     Produk --> Produk-Page
 
     Promotion --> WhatsApp_Admin
