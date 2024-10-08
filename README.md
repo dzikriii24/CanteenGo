@@ -97,6 +97,9 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
   - Instagram Penjual
   - Produk yang dijual
 }
+
+# USE CASE DIAGRAM
+
 # User Story
 
 Sebagai | Saya ingin bisa | Sehingga | Prioritas
