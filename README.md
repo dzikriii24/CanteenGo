@@ -36,16 +36,49 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
 # Struktur Data
 
 # Fungsi Sistem
-## Login dan Register
+## Login, Register dan Lupa Password
 - Fungsi ini memudahkan user, baik user yang ingin membeli maupun user yang berjualan. hal tersebut berguna untuk mengetahui identitas dari penjual maupun pembeli.
 ## Menjual Produk
 - Fungsi ini beguna untuk user yang ingin berjualan di CanteenGo. user hanya butuh mengisi identitas dan produk apa yang ingin dijual, nantinya akan diproses langsung oleh admin (pengelola website)
 ## Admin
 - Halaman admin berguna untuk mengontrol produk yang ingin diperjual belikan, apakah produk tersebut lulus pengujian atau tidak.
-## Pencarian Produk
-- Fitur ini memudahkan user(pembeli) dalam mencari menu makanan atau minuman yang ingin dipesan
+- Fitur pada page ini berisi {
+  - Memproses promosi
+  - Menyetujui Produk penjualan (ditambahkan ke home page/disetujui)
+  - Reject produk penjualan
+  - menghapus produk
+  - mengubah produk
+  - melihat list data user
+  - logout
+}
+## Home Page
+- Fitur pada page ini berisi {
+- Fitur promosi
+- Pencarian
+- Filter (makanan, minuman, atau dessert)
+- Produk yang dijual
+  }
+
 ## Pemesanan
 - Pemesanan dalam web ini terbilang mudah, web ini hanya menyediakan tempat atau lapak untuk menjual suatu produk. untuk sistem jual beli atau pemesanan, produk yang dijual sudah terhubung langsung dengan WhatsApp penjual, pembeli hanya perlu menekan tombol beli disalah satu laman produk, nantinya akan terhubung langsung dengan WhatsApp penjual.
+
+## Profile Page
+- Page ini berisi {
+  - Setting(
+  - Dapat merubah data user(Nama, Nomer HP, Domisili/alamat, Email, Instagram(Link), Password).
+    )
+  - Log out
+  }
+## Halaaman Produk/ Pembelian
+- Page ini berisi {
+  - Nama Produk
+  - Foto Produk
+  - Harga Produk
+  - Deskripsi Produk
+  - Chat Penjual
+}
+
+
 # User Story
 
 Sebagai | Saya ingin bisa | Sehingga | Prioritas
