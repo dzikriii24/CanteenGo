@@ -161,7 +161,7 @@ flowchart LR
     Instagram
     ]
 
-    Product_View [
+    Product_View[
     Foto Produk
     Harga
     Beli
