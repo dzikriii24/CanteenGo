@@ -99,8 +99,100 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
 }
 
 # USE CASE DIAGRAM
+```mermaid
+---
+title: USE CASE DIAGRAM CanteenGo
+---
+
+flowchart LR
+
+    User --> First-Page
+    User --> Home-Page
+    User --> Setting-Page
+    User --> Product-Page
+    User --> Seller-Page
+    User --> Profile-Page
+
+    First-Page --> Login --> User_Login
+    First-Page --> Register --> User_Data2
+    First-Page --> Forgot-Password --> Email
+
+    Home-Page --> Search
+    Home-Page --> Promotion
+    Home-Page --> Filter-Product --> Filter
+    Home-Page --> Product
+
+    Setting-Page --> Change_User_Data --> User_Data
+    Setting-Page --> Logout
+
+    Product-Page --> Foto_Produk
+    Product-Page --> Nama_Produk
+    Product-Page --> Harga
+    Product-Page --> Deskripsi_Produk
+    Product-Page --> Chat_Penjual
+
+    Seller-Page --> Form_Penjualan --> Form_Penjualan2
+
+    Profile-Page --> Nama_User
+    Profile-Page --> Instagram
+    Profile-Page --> Product-yang-Dijual
+
+
+    Admin --> LoginAdmin --> inputAdmin
+    Admin --> Reject_Produk
+    Admin --> Menyetujui_Produk
+    Admin --> List_User
+    Admin --> Proses_Promosi
+
+
+    User_Data[Username
+    Password
+    Nomer Telepon
+    Alamat/Domisili
+    Email
+    Instagram
+    ]
+
+    User_Data2[Username
+    Password
+    Nomer Telepon
+    Alamat/Domisili
+    Email
+    Instagram
+    ]
+    
+    User_Login[
+        Username
+        Password
+    ]
+
+    Filter[
+        Minuman
+        Makanan 
+        Desert
+    ]
+
+    Form_Penjualan2[
+        Nama_Produk
+        Foto_Produk
+        Harga_Produk
+        Deskripsi_Produk
+        Nomer_HP
+    ]
+
+
+inputAdmin[
+    Username : Admin
+    Password : Admin123*
+]
+
+
+
+
+
 
 # User Story
+
 
 Sebagai | Saya ingin bisa | Sehingga | Prioritas
 ---|---|---|---
