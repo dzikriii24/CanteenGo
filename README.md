@@ -194,6 +194,94 @@ inputAdmin[
 
 
 ```
+## Activity Diagram
+```mermaid
+flowchart TD
+    Register --> Login 
+    LupaPassword -->Login
+
+    Login --> Page1
+    Login --> LupaPassword
+    Login --> LoginAdmin --> LogAdm--> Admin
+
+    Admin --> LogOut
+    Admin --> List_User_Data
+    Admin --> Proses_Promosi
+    Admin --> Approved
+    Admin --> NotApproved
+
+    Page1 --> Search
+    Page1 --> Filter
+    Page1 --> Promotion
+    Page1 -->Produk
+    Page1 --> Setting-Page
+    Page1 --> Seller-Page
+    Page1 --> Profil-Page
+    Profil-Page --> Identitas --> Identitas2
+
+    Search --> Produk
+    Filter --> Produk
+    Produk --> ProdukS
+    produks --> produk
+    Produk --> Produk-Page
+
+    Promotion --> WhatsApp_Admin
+    WhatsApp_Admin --> Proses_Promosi
+    Produk-Page --> DetailProduk --> Det --> Chat-Penjual--> WhatsApp_Penjual
+    Chat-Penjual --> Penjual_Memproses --> Pembeli
+
+    WaitForApproval --> Approved
+    WaitForApproval --> NotApproved
+
+    Seller-Page --> Jual-Produk --> JualProduks
+    JualProduks --> WaitForApproval
+    Approved --> Produk-Page
+
+    Setting-Page --> LogOut
+    Setting-Page --> Edit_Profil--> Edit_Profils
+    Setting-Page --> Promotion
+
+    
+    Det[
+        Profil Penjual
+        Foto Produk
+        Harga
+        Deskripsi
+    ]
+    Edit_Profils[
+        Nama
+        Nomer HP
+        Domisili
+        Email
+        Email
+        Instagram
+        Password
+    ]
+    JualProduks[
+        Nama Produk
+        Foto Produk
+        Nomer HP
+        Harga Produk
+        Deskripsi Produk
+    ]
+    LogAdm[
+        Username : Admin
+        Password : Admin123*
+    ]
+    ProdukS[
+        Makanan
+        Minuman
+        Desert
+    ]
+    Identitas2[
+        Nama
+        Instagram
+        Produk yang Dijual
+    ]
+    
+
+
+```
 
 
 
