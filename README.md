@@ -120,7 +120,7 @@ flowchart LR
     Home-Page --> Search
     Home-Page --> Promotion
     Home-Page --> Filter-Product --> Filter
-    Home-Page --> Product
+    Home-Page --> Product --> Product_View
 
     Setting-Page --> Change_User_Data --> User_Data
     Setting-Page --> Logout
@@ -160,6 +160,12 @@ flowchart LR
     Email
     Instagram
     ]
+
+    Product_View [
+    Foto Produk
+    Harga
+    Beli
+    ]
     
     User_Login[
         Username
@@ -187,7 +193,7 @@ inputAdmin[
 ]
 
 
-
+```
 
 
 
