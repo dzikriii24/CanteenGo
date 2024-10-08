@@ -38,6 +38,7 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
 # Fungsi Sistem
 ## Login, Register dan Lupa Password
 - Fungsi ini memudahkan user, baik user yang ingin membeli maupun user yang berjualan. hal tersebut berguna untuk mengetahui identitas dari penjual maupun pembeli.
+- Pada fitur ini user dapat menginput data (Nama, Nomer HP, Domisili/Alamat, Email, Link Insagram, dam Password).
 ## Menjual Produk
 - Fungsi ini beguna untuk user yang ingin berjualan di CanteenGo. user hanya butuh mengisi identitas dan produk apa yang ingin dijual, nantinya akan diproses langsung oleh admin (pengelola website)
 ## Admin
@@ -68,9 +69,11 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
   - Dapat merubah data user(Nama, Nomer HP, Domisili/alamat, Email, Instagram(Link), Password).
     )
   - Log out
+  - Promosi ( Pada fitur ini penjual akan langsung di arahkan ke WA admin).
   }
 ## Halaaman Produk/ Pembelian
 - Page ini berisi {
+  - Profil Penjual
   - Nama Produk
   - Foto Produk
   - Harga Produk
@@ -78,7 +81,22 @@ Bagaimana membuat website yang penggunanya dapat melakukan jual beli secara muda
   - Chat Penjual
 }
 
+## Menjual Barang
+- Pada page ini user dapat menginput detail dari produk yang ingin dijual.
+- page ini berisi {
+  - Nama Produk
+  - Foto Produk
+  - Harga Produk
+  - Deskripsi Produk
+  - Nomer HP
+  }
 
+## Profil Penjual
+-Pada page ini berisi {
+  - Nama Penjual
+  - Instagram Penjual
+  - Produk yang dijual
+}
 # User Story
 
 Sebagai | Saya ingin bisa | Sehingga | Prioritas
