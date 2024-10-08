@@ -222,8 +222,8 @@ flowchart TD
     Search --> Produk
     Filter --> Produk
     Produk --> ProdukS
-    produkS --> produk
     Produk --> Produk-Page
+    ProdukS --> Produk
 
     Promotion --> WhatsApp_Admin
     WhatsApp_Admin --> Proses_Promosi
